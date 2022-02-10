@@ -11,7 +11,7 @@ public class Main {
 
 		FourDigitNumberView view = new FourDigitNumberView();
 		
-		view.showMessage("Введите четырехзначное чи�?ло");
+		view.showMessage("Введите четырехзначное число");
 		
 		
 		FourDigitNumberInput input = new FourDigitNumberInput();
