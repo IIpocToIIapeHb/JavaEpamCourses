@@ -1,26 +1,30 @@
 package by.home.java_fundamentals.Task01;
 
-/*Составить линейную программу, печатающую значение true,
- *если указанное высказывание является истинным, и false — в противном случае:
-
-Сумма двух первых цифр заданного четырехзначного числа
-равна сумме двух его последних цифр.*/
+/*Со�?тавить линейную программу, печатающую значение true,
+ *е�?ли указанное вы�?казывание �?вл�?ет�?�? и�?тинным, и false — в противном �?лучае:
+Сумма двух первых цифр заданного четырехзначного чи�?ла
+равна �?умме двух его по�?ледних цифр.*/
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		StatementView view = new StatementView();
-		StatementInput input = new StatementInput();
-		StatementLogic logic = new StatementLogic();
-
-		view.showMessage("Введите четырехзначное число");
+		FourDigitNumberView view = new FourDigitNumberView();
+		
+		view.showMessage("Введите четырехзначное чи�?ло");
+		
+		
+		FourDigitNumberInput input = new FourDigitNumberInput();
 		
 		int number = input.readFourDigitInt();
 		
-		boolean result = logic.expressionCheck(number);
 		
-		view.trueOrFalse(result);
+		FourDigitNumberLogic logic = new FourDigitNumberLogic();
+		
+		boolean result = logic.isSumOfTwoFirstAndTwoLastDigitsEquels(number);
+		
+		
+		view.showIsSumOfTwoFirstAndTwoLastDigitsEquels(result);
 	}
 
 }
