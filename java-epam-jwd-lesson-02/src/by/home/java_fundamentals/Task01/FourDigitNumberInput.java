@@ -14,7 +14,7 @@ public class FourDigitNumberInput {
 		int intNumber = readInt(scanner);
 
 		while (!isFourDigitInt(intNumber)) {
-			System.out.println("Вы ввели не четырхзначное чи�?ло. Попробуйте еще раз");
+			System.out.println("Вы ввели не четырхзначное чи�?ло. Попробуйте еще раз");
 			fourDigitNumber = readInt(scanner);
 		}
 		return fourDigitNumber;
@@ -28,7 +28,7 @@ public class FourDigitNumberInput {
 
 		while (!scanner.hasNextInt()) {
 			scanner.next();
-			System.out.println("Вы ввели не целое чи�?ло. Попробуйте еще раз");
+			System.out.println("Вы ввели не целое чиcло. Попробуйте еще раз");
 		}
 		i = scanner.nextInt();
 		return i;
