@@ -3,39 +3,36 @@ package by.home.java_fundamentals.Task01;
 import java.util.Scanner;
 
 public class FourDigitNumberInput {
-	
 
 	public int readFourDigitInt() {
 
 		int fourDigitNumber = 0;
 
 		Scanner scanner = new Scanner(System.in);
-
+		
 		int intNumber = readInt(scanner);
 
 		while (!isFourDigitInt(intNumber)) {
 			System.out.println("Вы ввели не четырхзначное число. Попробуйте еще раз");
 			fourDigitNumber = readInt(scanner);
 		}
+		
 		return fourDigitNumber;
 
 	}
 
 	// method that requests and returns an integer number
-	public int readInt(Scanner scanner) {
-
-		int i;
+	private int readInt(Scanner scanner) {
 
 		while (!scanner.hasNextInt()) {
 			scanner.next();
 			System.out.println("Вы ввели не целое чиcло. Попробуйте еще раз");
 		}
-		i = scanner.nextInt();
-		return i;
+		return scanner.nextInt();
 	}
 
 	// method that checks if the parameter is a four-digit number
-	public boolean isFourDigitInt(int number) {
+	private boolean isFourDigitInt(int number) {
 
 		boolean result = false;
 
