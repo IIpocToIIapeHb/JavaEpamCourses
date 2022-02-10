@@ -12,7 +12,7 @@ public class StatementInput {
 
 		while (!sc1.hasNextInt()) {
 			sc1.next();
-			view.showMessage("Ââåäèòå öåëîå ÷èñëî");
+			view.showMessage("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾");
 		}
 
 		int i = sc1.nextInt();
@@ -20,7 +20,7 @@ public class StatementInput {
 		if (i / 1000 > 0 && i / 1000 < 10) {
 			return i;
 		} else {
-			view.showMessage("Äàííîå ÷èñëî íå 4-õçíà÷íîå. Ïîïðîáóéòå åù¸ ðàç.");
+			view.showMessage("Ð”Ð°Ð½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð½Ðµ 4-Ñ…Ð·Ð½Ð°Ñ‡Ð½Ð¾Ðµ. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ñ‘ Ñ€Ð°Ð·.");
 			return i = readFourDigitInt();
 
 		}
